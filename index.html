@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepMatch | Optimize Your Rest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>SleepMatch</h1>
+            <p>AI-Powered Sleep Optimization</p>
+        </header>
+
+        <div class="glass-panel">
+            <section class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="e.g., 25" min="1" max="120">
+            </section>
+
+            <section class="input-group">
+                <label for="activity">Activity Level</label>
+                <div class="select-wrapper">
+                    <select id="activity">
+                        <option value="low">Low (Sedentary)</option>
+                        <option value="medium">Medium (Moderate Exercise)</option>
+                        <option value="high">High (Athlete/Active)</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="input-group">
+                <label for="caffeine">Caffeine Cups (Daily)</label>
+                <input type="number" id="caffeine" placeholder="e.g., 2" min="0" max="10">
+            </section>
+
+            <section class="input-group">
+                <label for="wakeTime">Desired Wake-Up Time</label>
+                <input type="time" id="wakeTime" step="60">
+            </section>
+
+            <button id="calculateBtn">Calculate Sleep Plan</button>
+        </div>
+
+        <div id="result" class="result-panel hidden">
+            <div class="result-header">
+                <h2>Your Sleep Plan</h2>
+                <div class="sleep-score">
+                    <span id="targetSleep">--</span>
+                    <small>hours needed</small>
+                </div>
+            </div>
+
+            <div class="recommendations">
+                <div class="rec-card">
+                    <h3>Bedtime Window</h3>
+                    <p id="bedtimeWindow">--</p>
+                    <small>Based on 90min sleep cycles</small>
+                </div>
+                <div class="rec-card">
+                    <h3>Analysis</h3>
+                    <p id="reasonText">--</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
