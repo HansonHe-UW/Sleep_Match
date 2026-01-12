@@ -7,7 +7,6 @@
 This project is an **AI-Assisted Web Port** of an original Python algorithm.
 
 * **Original Logic:** The core algorithm was originally developed in Python by **Evelyn ([@Evelyn0826](https://github.com/Evelyn0826))**. You can view the original implementation here: [Evelyn0826/sleepmatch](https://github.com/Evelyn0826/sleepmatch).
-* **Web Adaptation:** I utilized **Google Antigravity** (AI Agents) to refactor the Python logic into JavaScript and wrap it in a responsive, glassmorphism-styled web interface.
 * **Goal:** To make the Python tool accessible on any device (Tablets/Phones) without needing a Python environment.
 
 ## 📐 Engineering & Logic
